@@ -1,8 +1,15 @@
-const getInsult = require("./ShakespearInsult");
+const getShakespeare = require("./ShakespearInsult");
+const getModernInsult = require("./ModernInsult");
+
 const router = require("express").Router();
 
-router.get("/", (req, res) => {
-  let insult = getInsult();
+router.get("/shakespeare", (req, res) => {
+  let insult = getShakespeare();
+  res.json(insult);
+});
+
+router.get("/modern", (req, res) => {
+  let insult = getModernInsult();
   res.json(insult);
 });
 
