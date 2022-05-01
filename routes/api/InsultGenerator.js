@@ -1,4 +1,4 @@
-const getShakespeare = require("./ShakespeareInsult");
+const getShakespeare = require("./ShakespearInsult");
 const getModernInsult = require("./ModernInsult");
 const getCompleteInsult = require("./CompleteInsult");
 
@@ -33,4 +33,16 @@ router.get("/complete", (req, res) => {
     res.status(500).send(error);
   }
 });
+
+router.get("/", (req, res) => {
+  const insults = [getShakespeare, getModernInsult, getCompleteInsult];
+  try {
+    const insult = insults[Math.floor(Math.random() * insults.length)];
+    res.status(200).send({ insult: insult() });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send(error);
+  }
+});
+
 module.exports = router;
