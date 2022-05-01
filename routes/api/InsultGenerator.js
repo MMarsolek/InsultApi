@@ -34,7 +34,7 @@ router.get("/complete", (req, res) => {
   }
 });
 
-router.get("/", (req, res) => {
+router.get("/*", (req, res) => {
   const insults = [getShakespeare, getModernInsult, getCompleteInsult];
   try {
     const insult = insults[Math.floor(Math.random() * insults.length)];
