@@ -38,6 +38,7 @@ const adjectives = [
   "butterface",
   "tone deaf",
   "helmet wearing",
+  "completely average",
 ];
 
 const elaborateAdjective = [
@@ -78,7 +79,20 @@ const elaborateAdjective = [
 ];
 
 const noun = [
+  "smurf",
+  "airhead",
+  "ass-kisser",
+  "bastard",
+  "bimbo",
+  "frosted flake",
+  "ginger",
+  "blonde",
+  "chicken",
+  "buggar",
+  "fetus",
+  "middle of the bell curve",
   "clown",
+  "Tasha",
   "waffle",
   "sucker",
   "muffin",
@@ -113,6 +127,7 @@ const noun = [
   "pirate",
   "gremlin",
   "boob",
+  "secretion",
   "ball sack",
   "champion",
   "school boy",
@@ -121,6 +136,7 @@ const noun = [
   "geek",
   "shit hole",
   "tool bag",
+  "whore",
   "canoe",
 ];
 
