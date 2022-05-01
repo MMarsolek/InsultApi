@@ -34,7 +34,7 @@ router.get("/complete", (req, res) => {
   }
 });
 
-router.get("/*", (req, res) => {
+router.get("/", (req, res) => {
   const insults = [getShakespeare, getModernInsult, getCompleteInsult];
   try {
     const insult = insults[Math.floor(Math.random() * insults.length)];
@@ -43,6 +43,12 @@ router.get("/*", (req, res) => {
     console.log(error);
     res.status(500).send(error);
   }
+});
+
+router.get("/*", (req, res) => {
+  const insults = [getShakespeare, getModernInsult, getCompleteInsult];
+  const insult = insults[Math.floor(Math.random() * insults.length)];
+  res.status(404).send("WRONG ROUTE you " + insult());
 });
 
 module.exports = router;
