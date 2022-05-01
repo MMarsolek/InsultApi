@@ -48,7 +48,7 @@ router.get("/", (req, res) => {
 router.get("/*", (req, res) => {
   const insults = [getShakespeare, getModernInsult, getCompleteInsult];
   const insult = insults[Math.floor(Math.random() * insults.length)];
-  res.status(404).send("WRONG ROUTE you " + insult());
+  res.status(404).send("Wrong route " + insult());
 });
 
 module.exports = router;
