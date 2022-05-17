@@ -92,12 +92,7 @@ const noun = [
   "fetus",
   "middle of the bell curve",
   "clown",
-  "Tasha",
-  "Katelyn",
-  "Nick",
-  "Matt",
-  "Zack",
-  "Benny",
+  "fart cloud",
   "waffle",
   "sucker",
   "muffin",
@@ -150,7 +145,7 @@ function getInsult() {
   let insultElaborate =
     elaborateAdjective[getRandomInt(elaborateAdjective.length)];
   let insultNoun = noun[getRandomInt(noun.length)];
-  return insultAdj + " " + insultElaborate + " " + insultNoun;
+  return "you " + insultAdj + " " + insultElaborate + " " + insultNoun;
 }
 
 function getRandomInt(max) {

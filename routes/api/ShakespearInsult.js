@@ -151,7 +151,7 @@ function getInsult() {
   let insultElaborate =
     elaborateAdjective[getRandomInt(elaborateAdjective.length)];
   let insultNoun = noun[getRandomInt(noun.length)];
-  return insultAdj + " " + insultElaborate + " " + insultNoun;
+  return "you " + insultAdj + " " + insultElaborate + " " + insultNoun;
 }
 
 function getRandomInt(max) {

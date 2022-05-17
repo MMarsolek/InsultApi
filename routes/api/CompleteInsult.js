@@ -9,6 +9,15 @@ const insult = [
   "your driving is so bad that you shouldn't be allowed to steer a shopping cart through a supermarket",
   "you're a bag of stale chips",
   "you are the exact reason why women orgasm with their eyes shut.",
+  "there are approximately 1,010,300 words in the English language, but I could never string enough words together to properly express how much I want to hit you with a chair.",
+  "you're like a plunger. Always bringing up old shit.",
+  "you drive like your patience is shorter than your dick.",
+  "I can yell into a ravine and the echo I would hear could hold a better conversation that you.",
+  "you're as bright as a black hole and twice as dense.",
+  "the bar was so low that it was a tripping hazard in Hell, yet here you are, practically limbo dancing with the devil.",
+  "it must have been a sad day when you slithered out of the abortion bucket.",
+  "I bet your teacher always handed your tests back to you face down.",
+  "you look like a goblin banker of Gringotts from the Harry Potter movies.",
 ];
 
 function getInsult() {
