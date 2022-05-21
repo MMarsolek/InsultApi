@@ -14,15 +14,15 @@ router.get("/shakespeare", (req, res) => {
   }
 });
 
-router.get("/modern", (req, res) => {
-  try {
-    let insult = getModernInsult();
-    res.status(200).send({ insult: insult });
-  } catch (error) {
-    console.log(error);
-    res.status(500).send(error);
-  }
-});
+// router.get("/modern", (req, res) => {
+//   try {
+//     let insult = getModernInsult();
+//     res.status(200).send({ insult: insult });
+//   } catch (error) {
+//     console.log(error);
+//     res.status(500).send(error);
+//   }
+// });
 
 router.get("/complete", (req, res) => {
   try {
@@ -34,7 +34,7 @@ router.get("/complete", (req, res) => {
   }
 });
 
-router.get("/", (req, res) => {
+router.get("/modern", (req, res) => {
   const insults = [getShakespeare, getModernInsult, getCompleteInsult];
   try {
     const insult = insults[Math.floor(Math.random() * insults.length)];
